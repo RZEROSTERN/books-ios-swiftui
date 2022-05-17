@@ -13,11 +13,12 @@ struct BooksList: View {
     var body: some View {
         HStack {
             NavigationLink(destination: BookPreview(), isActive: $isLinkActive) {
-                Button(action: {
+                /*Button(action: {
                     self.isLinkActive = true
                 }) {
                     Text("LOTR")
-                }
+                }*/
+                BooksListView()
             }
         }
         .navigationTitle(Text("Books list"))
